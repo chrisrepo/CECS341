@@ -1,0 +1,310 @@
+Release 12.2 - xst M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.61 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.61 secs
+ 
+--> Reading design: CPU_EU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU_EU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU_EU"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : CPU_EU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SignExtend_16to32.v" in library work
+Compiling verilog file "Mux2to1_5bit.v" in library work
+Module <SignExtend_16to32> compiled
+Compiling verilog file "../../Lab 4/RegisterFile/RegFile32.v" in library work
+Module <Mux2to1_5bit> compiled
+WARNING:HDLCompilers:301 - "../../Lab 4/RegisterFile/RegFile32.v" line 24 Too many digits specified in hex constant
+Compiling verilog file "../../Lab 3/Lab3Xilinx/ALU_Control.v" in library work
+Module <RegFile32> compiled
+Compiling verilog file "../../Lab 3/Lab3Xilinx/ALU.v" in library work
+Module <ALU_Control> compiled
+Compiling verilog file "../../Lab 1/Lab1_Mux2to1_32bit/Mux2to1_32bit.v" in library work
+Module <ALU> compiled
+Compiling verilog file "CPU_EU.v" in library work
+Module <Mux2to1_32bit> compiled
+Module <CPU_EU> compiled
+No errors in compilation
+Analysis of file <"CPU_EU.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <CPU_EU> in library <work>.
+
+Analyzing hierarchy for module <Mux2to1_5bit> in library <work>.
+
+Analyzing hierarchy for module <Mux2to1_32bit> in library <work>.
+
+Analyzing hierarchy for module <RegFile32> in library <work>.
+
+Analyzing hierarchy for module <SignExtend_16to32> in library <work>.
+
+Analyzing hierarchy for module <ALU_Control> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <CPU_EU>.
+Module <CPU_EU> is correct for synthesis.
+ 
+Analyzing module <Mux2to1_5bit> in library <work>.
+Module <Mux2to1_5bit> is correct for synthesis.
+ 
+Analyzing module <Mux2to1_32bit> in library <work>.
+Module <Mux2to1_32bit> is correct for synthesis.
+ 
+Analyzing module <RegFile32> in library <work>.
+Module <RegFile32> is correct for synthesis.
+ 
+Analyzing module <SignExtend_16to32> in library <work>.
+Module <SignExtend_16to32> is correct for synthesis.
+ 
+Analyzing module <ALU_Control> in library <work>.
+WARNING:Xst:882 - "../../Lab 3/Lab3Xilinx/ALU_Control.v" line 41: Found 'Z' or 'X' in case statement, condition is always false. 
+Module <ALU_Control> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+WARNING:Xst:905 - "../../Lab 3/Lab3Xilinx/ALU.v" line 28: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Output>
+Module <ALU> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Mux2to1_5bit>.
+    Related source file is "Mux2to1_5bit.v".
+Unit <Mux2to1_5bit> synthesized.
+
+
+Synthesizing Unit <Mux2to1_32bit>.
+    Related source file is "../../Lab 1/Lab1_Mux2to1_32bit/Mux2to1_32bit.v".
+Unit <Mux2to1_32bit> synthesized.
+
+
+Synthesizing Unit <RegFile32>.
+    Related source file is "../../Lab 4/RegisterFile/RegFile32.v".
+    Found 992-bit register for signal <RF<31:1>>.
+Unit <RegFile32> synthesized.
+
+
+Synthesizing Unit <SignExtend_16to32>.
+    Related source file is "SignExtend_16to32.v".
+Unit <SignExtend_16to32> synthesized.
+
+
+Synthesizing Unit <ALU_Control>.
+    Related source file is "../../Lab 3/Lab3Xilinx/ALU_Control.v".
+WARNING:Xst:647 - Input <ALU_op> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 4-bit latch for signal <ALU_Ctl>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <ALU_Control> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "../../Lab 3/Lab3Xilinx/ALU.v".
+    Found 32-bit addsub for signal <Output$addsub0000>.
+    Found 32-bit comparator less for signal <Output$cmp_lt0000> created at line 40.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <CPU_EU>.
+    Related source file is "CPU_EU.v".
+Unit <CPU_EU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 31
+ 32-bit register                                       : 31
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Multiplexers                                         : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CPU_EU> ...
+
+Optimizing unit <Mux2to1_5bit> ...
+
+Optimizing unit <Mux2to1_32bit> ...
+
+Optimizing unit <SignExtend_16to32> ...
+
+Optimizing unit <RegFile32> ...
+
+Optimizing unit <ALU_Control> ...
+
+Optimizing unit <ALU> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CPU_EU.ngr
+Top Level Output File Name         : CPU_EU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : Automotive 9500XL
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 162
+
+Cell Usage :
+# BELS                             : 4291
+#      AND2                        : 2693
+#      AND3                        : 120
+#      AND4                        : 21
+#      AND5                        : 12
+#      GND                         : 1
+#      INV                         : 674
+#      OR2                         : 343
+#      OR3                         : 10
+#      OR4                         : 65
+#      OR7                         : 64
+#      OR8                         : 192
+#      VCC                         : 1
+#      XOR2                        : 95
+# FlipFlops/Latches                : 996
+#      FDCE                        : 992
+#      LD                          : 4
+# IO Buffers                       : 160
+#      IBUF                        : 63
+#      OBUF                        : 97
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.20 secs
+ 
+--> 
+
+Total memory usage is 223236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

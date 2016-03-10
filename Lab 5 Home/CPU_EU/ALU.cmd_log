@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/CECS 341 Labs/Lab 5/CPU_EU/ALU.xst" -ofn "E:/CECS 341 Labs/Lab 5/CPU_EU/ALU.syr" 

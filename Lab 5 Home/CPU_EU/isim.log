@@ -1,0 +1,75 @@
+ISim log file
+Running: C:\Users\Christopher\Desktop\CECS 341 Labs\Lab 5 Home\CPU_EU\CPU_EU_Test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Christopher/Desktop/CECS 341 Labs/Lab 5 Home/CPU_EU/CPU_EU_Test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+--------------------------Test R-Type Instructions------------------------------
+
+Test case 1: nor $30, $31, $31
+Expected result: $30 <-0xef96998e
+Actual Result: $30 = 0xef96998e
+
+
+Test case 2: slt $29, $31, $30
+Expected result: $29 <-0x1
+Actual Result: $29 = 0x00000001
+
+
+Test case 3: OR $28, $30, $31
+Expected result: $28 <-0xffffffff
+Actual Result: $28 = 0xffffffff
+
+
+Test case 4: AND $27, $28, $29
+Expected result of 0xffffffff & 0x00000001: $27 <-0x00000001
+Actual Result: $27 = 0x00000001
+
+
+Test case 5: SUB $26, $30, $27
+Expected result of 0xef96998e - 0x00000001: $26 <-0xef96998d
+Actual Result: $26 = 0xef96998d
+
+
+Test case 6: ADD $25, $31, $31
+Expected result of 0x10696671 + 0x10696671: $25 <-0x20d2cce2
+Actual Result: $25 = 0x20d2cce2
+
+--------------------------Test I-Type Memory Access Instructions------------------------------
+
+Test case 7: lw $24, 4($0) Data_From_RAM = 0x12341234
+Expected Results: 
+	RAM_Address = 0x00000004
+	$24 <- 0x12341234
+Actual Result: 
+	RAM_Address = 00000004
+	$24 <- 0x12341234
+
+
+Test case 8: sw $31, 12($24)
+Expected Results: 
+	RAM_Address = 0x12341240
+	Data_to_RAM = 0x10696671
+Actual Result: 
+	RAM_Address = 0x12341240
+	Data_to_RAM = 0x10696671
+
+--------------------------Test I-Type BEQ Instruction------------------------------
+
+Test case 9: beq $24, $24, 0x0003
+Expected Results: 
+	Zero = 1
+	ALU_Result = 00000000
+Actual Result: 
+	Zero = 1
+	ALU_Result = 00000000
+
+Stopped at time : 202 ns :  in File "C:/Users/Christopher/Desktop/CECS 341 Labs/Lab 5 Home/CPU_EU/CPU_EU_Test.v" Line 291 

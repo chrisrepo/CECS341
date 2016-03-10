@@ -1,0 +1,3 @@
+verilog work "Mux2to1_32bit.v"
+verilog work "Mux2to1_Tester.v"
+verilog work "C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to retrieve the path to the iSE Project Repository. Will use the default filename of &apos;<arg fmt="%s" index="1">CPU_EU.ise</arg>&apos;.
+</msg>
+
+<msg type="error" file="Cpld" num="847" delta="new" >Insufficient number of input pins.  This design needs at least <arg fmt="%d" index="1">63</arg> but only <arg fmt="%d" index="2">20</arg> left after allocating other resources.
+</msg>
+
+<msg type="error" file="Cpld" num="29" delta="new" >Device <arg fmt="%s" index="1">XA95144XL-15-CS144</arg> was disqualified.
+</msg>
+
+<msg type="error" file="Cpld" num="0" delta="new" >The design requires too many resources to fit in any of the specified devices or design rule checks prevent this design from fitting.
+</msg>
+
+<msg type="error" file="Cpld" num="868" delta="new" >Cannot fit the design into any of the specified devices with the selected implementation options.
+</msg>
+
+</messages>
+

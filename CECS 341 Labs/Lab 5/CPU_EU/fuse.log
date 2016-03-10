@@ -1,0 +1,33 @@
+Running: C:\Xilinx\12.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o E:/CECS 341 Labs/Lab 5/CPU_EU/CPU_EU_Test_isim_beh.exe -prj E:/CECS 341 Labs/Lab 5/CPU_EU/CPU_EU_Test_beh.prj work.CPU_EU_Test work.glbl 
+ISim M.63c (signature 0xb869381d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/SignExtend_16to32.v\" into library work
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/Mux2to1_5bit.v\" into library work
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/../../Lab 4/RegisterFile/RegFile32.v\" into library work
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/../../Lab 3/Lab3Xilinx/ALU_Control.v\" into library work
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/../../Lab 3/Lab3Xilinx/ALU.v\" into library work
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/../../Lab 1/Lab1_Mux2to1_32bit/Mux2to1_32bit.v\" into library work
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/CPU_EU.v\" into library work
+Analyzing Verilog file \"E:/CECS 341 Labs/Lab 5/CPU_EU/CPU_EU_Test.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97652 KB
+Fuse CPU Usage: 171 ms
+Compiling module Mux2to1_5bit
+Compiling module Mux2to1_32bit
+Compiling module RegFile32
+Compiling module SignExtend_16to32
+Compiling module ALU_Control
+Compiling module ALU
+Compiling module CPU_EU
+Compiling module CPU_EU_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable E:/CECS 341 Labs/Lab 5/CPU_EU/CPU_EU_Test_isim_beh.exe
+Fuse Memory Usage: 103268 KB
+Fuse CPU Usage: 312 ms

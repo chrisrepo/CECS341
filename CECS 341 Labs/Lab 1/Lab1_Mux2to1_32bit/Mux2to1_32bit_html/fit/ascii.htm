@@ -1,0 +1,771 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version M.63c                             Xilinx Inc.
+                                  Fitter Report
+Design Name: Mux2to1_32bit                       Date:  1-27-2016,  2:03PM
+Device Used: XA95144XL-15-CS144
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+32 /144 ( 22%) 64  /720  (  9%) 72 /432 ( 17%)   0  /144 (  0%) 97 /117 ( 83%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           5/18       11/54       10/90      14/15
+FB2           4/18        9/54        8/90      13/15
+FB3           4/18        9/54        8/90      10/15
+FB4           4/18        9/54        8/90      11/15
+FB5           4/18        9/54        8/90      12/14
+FB6           3/18        7/54        6/90      12/13
+FB7           4/18        9/54        8/90      11/15
+FB8           4/18        9/54        8/90      14/15
+             -----       -----       -----      -----    
+             32/144      72/432      64/720     97/117
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   65          65    |  I/O              :    91     109
+Output        :   32          32    |  GCK/IO           :     2       3
+Bidirectional :    0           0    |  GTS/IO           :     3       4
+GCK           :    0           0    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     97          97
+
+** Power Data **
+
+There are 0 macrocells in high performance mode (MCHP).
+There are 32 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'Mux2to1_32bit.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 32 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+DataOut<0>          2     3     FB1_1   H3   I/O     O       LOW  FAST 
+DataOut<10>         2     3     FB1_4   J1   I/O     O       LOW  FAST 
+DataOut<11>         2     3     FB1_8   H1   I/O     O       LOW  FAST 
+DataOut<12>         2     3     FB1_11  H4   I/O     O       LOW  FAST 
+DataOut<28>         2     3     FB1_15  J4   I/O     O       LOW  FAST 
+DataOut<13>         2     3     FB2_4   C1   I/O     O       LOW  FAST 
+DataOut<14>         2     3     FB2_10  D2   I/O     O       LOW  FAST 
+DataOut<15>         2     3     FB2_14  E2   I/O     O       LOW  FAST 
+DataOut<16>         2     3     FB2_17  F2   I/O     O       LOW  FAST 
+DataOut<17>         2     3     FB3_3   K4   I/O     O       LOW  FAST 
+DataOut<18>         2     3     FB3_5   L2   I/O     O       LOW  FAST 
+DataOut<19>         2     3     FB3_9   N3   I/O     O       LOW  FAST 
+DataOut<1>          2     3     FB3_12  K5   I/O     O       LOW  FAST 
+DataOut<20>         2     3     FB4_2   A7   I/O     O       LOW  FAST 
+DataOut<21>         2     3     FB4_6   A6   I/O     O       LOW  FAST 
+DataOut<22>         2     3     FB4_11  D6   I/O     O       LOW  FAST 
+DataOut<23>         2     3     FB4_15  B4   I/O     O       LOW  FAST 
+DataOut<24>         2     3     FB5_2   N6   I/O     O       LOW  FAST 
+DataOut<25>         2     3     FB5_7   M10  I/O     O       LOW  FAST 
+DataOut<26>         2     3     FB5_11  M8   I/O     O       LOW  FAST 
+DataOut<27>         2     3     FB5_15  K9   I/O     O       LOW  FAST 
+DataOut<29>         2     3     FB6_2   C11  I/O     O       LOW  FAST 
+DataOut<2>          2     3     FB6_8   D10  I/O     O       LOW  FAST 
+DataOut<30>         2     3     FB6_12  A9   I/O     O       LOW  FAST 
+DataOut<31>         2     3     FB7_2   N12  I/O     O       LOW  FAST 
+DataOut<3>          2     3     FB7_7   K10  I/O     O       LOW  FAST 
+DataOut<4>          2     3     FB7_11  J11  I/O     O       LOW  FAST 
+DataOut<5>          2     3     FB7_15  H12  I/O     O       LOW  FAST 
+DataOut<6>          2     3     FB8_2   G11  I/O     O       LOW  FAST 
+DataOut<7>          2     3     FB8_6   F13  I/O     O       LOW  FAST 
+DataOut<8>          2     3     FB8_11  E12  I/O     O       LOW  FAST 
+DataOut<9>          2     3     FB8_15  C13  I/O     O       LOW  FAST 
+
+** 65 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+DataIn1<7>          FB1_2   F1   I/O     I
+DataIn1<4>          FB1_3   G2   I/O     I
+DataIn0<3>          FB1_5   G3   I/O     I
+DataIn0<29>         FB1_6   G4   I/O     I
+DataIn1<18>         FB1_9   H2   I/O     I
+DataIn1<19>         FB1_10  K3   I/O     I
+DataIn1<25>         FB1_12  J2   I/O     I
+DataIn1<27>         FB1_16  M1   I/O     I
+DataIn0<25>         FB1_17  K2   GCK/I/O I
+DataIn1<21>         FB2_2   A2   GSR/I/O I
+DataIn1<14>         FB2_5   B1   GTS/I/O I
+DataIn0<4>          FB2_6   C2   GTS/I/O I
+DataIn1<22>         FB2_8   D4   GTS/I/O I
+DataIn0<8>          FB2_11  E4   I/O     I
+DataIn0<2>          FB2_12  E3   I/O     I
+DataIn1<20>         FB2_13  E1   I/O     I
+DataIn0<16>         FB2_15  F4   I/O     I
+DataIn0<10>         FB2_16  F3   I/O     I
+DataIn0<19>         FB3_1   M3   I/O     I
+DataIn0<17>         FB3_6   L3   I/O     I
+DataIn1<9>          FB3_7   L5   I/O     I
+DataIn1<28>         FB3_8   N2   GCK/I/O I
+DataIn0<13>         FB3_11  M4   I/O     I
+DataIn1<1>          FB3_14  K6   I/O     I
+DataIn0<11>         FB4_1   C9   I/O     I
+DataIn0<22>         FB4_5   D7   I/O     I
+DataIn1<30>         FB4_8   B6   I/O     I
+DataIn0<21>         FB4_9   C6   I/O     I
+DataIn0<5>          FB4_12  B5   I/O     I
+DataIn0<30>         FB4_13  A4   I/O     I
+DataIn1<15>         FB4_17  A3   I/O     I
+DataIn1<31>         FB5_5   M7   I/O     I
+DataIn0<24>         FB5_6   N7   I/O     I
+DataIn1<6>          FB5_8   K7   I/O     I
+DataIn1<13>         FB5_9   N8   I/O     I
+DataIn1<11>         FB5_10  N11  I/O     I
+DataIn0<31>         FB5_12  K8   I/O     I
+DataIn1<10>         FB5_13  L11  I/O     I
+DataIn0<6>          FB5_17  M11  I/O     I
+Sel                 FB6_4   B11  I/O     I
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+DataIn0<12>         FB6_5   A12  I/O     I
+DataIn1<2>          FB6_6   A11  I/O     I
+DataIn0<7>          FB6_9   A10  I/O     I
+DataIn0<9>          FB6_10  B10  I/O     I
+DataIn0<0>          FB6_11  B9   I/O     I
+DataIn0<23>         FB6_14  D8   I/O     I
+DataIn1<12>         FB6_15  A8   I/O     I
+DataIn1<29>         FB6_17  B7   I/O     I
+DataIn0<20>         FB7_3   L12  I/O     I
+DataIn0<18>         FB7_5   M13  I/O     I
+DataIn1<0>          FB7_6   L13  I/O     I
+DataIn1<26>         FB7_8   K11  I/O     I
+DataIn1<3>          FB7_9   K13  I/O     I
+DataIn1<8>          FB7_13  J10  I/O     I
+DataIn1<24>         FB7_14  H11  I/O     I
+DataIn1<23>         FB8_3   F11  I/O     I
+DataIn0<28>         FB8_4   E13  I/O     I
+DataIn1<17>         FB8_5   G10  I/O     I
+DataIn0<1>          FB8_8   F12  I/O     I
+DataIn1<16>         FB8_9   F10  I/O     I
+DataIn1<5>          FB8_12  E10  I/O     I
+DataIn0<14>         FB8_13  D11  I/O     I
+DataIn0<15>         FB8_14  D12  I/O     I
+DataIn0<26>         FB8_16  B13  I/O     I
+DataIn0<27>         FB8_17  C12  I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               11/43
+Number of signals used by logic mapping into function block:  11
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+DataOut<0>            2       0     0   3     FB1_1   H3    I/O     O
+(unused)              0       0     0   5     FB1_2   F1    I/O     I
+(unused)              0       0     0   5     FB1_3   G2    I/O     I
+DataOut<10>           2       0     0   3     FB1_4   J1    I/O     O
+(unused)              0       0     0   5     FB1_5   G3    I/O     I
+(unused)              0       0     0   5     FB1_6   G4    I/O     I
+(unused)              0       0     0   5     FB1_7         (b)     
+DataOut<11>           2       0     0   3     FB1_8   H1    I/O     O
+(unused)              0       0     0   5     FB1_9   H2    I/O     I
+(unused)              0       0     0   5     FB1_10  K3    I/O     I
+DataOut<12>           2       0     0   3     FB1_11  H4    I/O     O
+(unused)              0       0     0   5     FB1_12  J2    I/O     I
+(unused)              0       0     0   5     FB1_13        (b)     
+(unused)              0       0     0   5     FB1_14  J3    I/O     
+DataOut<28>           2       0     0   3     FB1_15  J4    I/O     O
+(unused)              0       0     0   5     FB1_16  M1    I/O     I
+(unused)              0       0     0   5     FB1_17  K2    GCK/I/O I
+(unused)              0       0     0   5     FB1_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<0>         5: DataIn0<28>        9: DataIn1<12> 
+  2: DataIn0<10>        6: DataIn1<0>        10: DataIn1<28> 
+  3: DataIn0<11>        7: DataIn1<10>       11: Sel 
+  4: DataIn0<12>        8: DataIn1<11>      
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<0>           X....X....X............................. 3
+DataOut<10>          .X....X...X............................. 3
+DataOut<11>          ..X....X..X............................. 3
+DataOut<12>          ...X....X.X............................. 3
+DataOut<28>          ....X....XX............................. 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1   C3    I/O     
+(unused)              0       0     0   5     FB2_2   A2    GSR/I/O I
+(unused)              0       0     0   5     FB2_3         (b)     
+DataOut<13>           2       0     0   3     FB2_4   C1    I/O     O
+(unused)              0       0     0   5     FB2_5   B1    GTS/I/O I
+(unused)              0       0     0   5     FB2_6   C2    GTS/I/O I
+(unused)              0       0     0   5     FB2_7         (b)     
+(unused)              0       0     0   5     FB2_8   D4    GTS/I/O I
+(unused)              0       0     0   5     FB2_9   D3    GTS/I/O 
+DataOut<14>           2       0     0   3     FB2_10  D2    I/O     O
+(unused)              0       0     0   5     FB2_11  E4    I/O     I
+(unused)              0       0     0   5     FB2_12  E3    I/O     I
+(unused)              0       0     0   5     FB2_13  E1    I/O     I
+DataOut<15>           2       0     0   3     FB2_14  E2    I/O     O
+(unused)              0       0     0   5     FB2_15  F4    I/O     I
+(unused)              0       0     0   5     FB2_16  F3    I/O     I
+DataOut<16>           2       0     0   3     FB2_17  F2    I/O     O
+(unused)              0       0     0   5     FB2_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<13>        4: DataIn0<16>        7: DataIn1<15> 
+  2: DataIn0<14>        5: DataIn1<13>        8: DataIn1<16> 
+  3: DataIn0<15>        6: DataIn1<14>        9: Sel 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<13>          X...X...X............................... 3
+DataOut<14>          .X...X..X............................... 3
+DataOut<15>          ..X...X.X............................... 3
+DataOut<16>          ...X...XX............................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1   M3    I/O     I
+(unused)              0       0     0   5     FB3_2   L1    GCK/I/O 
+DataOut<17>           2       0     0   3     FB3_3   K4    I/O     O
+(unused)              0       0     0   5     FB3_4   N4    I/O     
+DataOut<18>           2       0     0   3     FB3_5   L2    I/O     O
+(unused)              0       0     0   5     FB3_6   L3    I/O     I
+(unused)              0       0     0   5     FB3_7   L5    I/O     I
+(unused)              0       0     0   5     FB3_8   N2    GCK/I/O I
+DataOut<19>           2       0     0   3     FB3_9   N3    I/O     O
+(unused)              0       0     0   5     FB3_10  N5    I/O     
+(unused)              0       0     0   5     FB3_11  M4    I/O     I
+DataOut<1>            2       0     0   3     FB3_12  K5    I/O     O
+(unused)              0       0     0   5     FB3_13        (b)     
+(unused)              0       0     0   5     FB3_14  K6    I/O     I
+(unused)              0       0     0   5     FB3_15  L6    I/O     
+(unused)              0       0     0   5     FB3_16        (b)     
+(unused)              0       0     0   5     FB3_17  M6    I/O     
+(unused)              0       0     0   5     FB3_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<17>        4: DataIn0<1>         7: DataIn1<19> 
+  2: DataIn0<18>        5: DataIn1<17>        8: DataIn1<1> 
+  3: DataIn0<19>        6: DataIn1<18>        9: Sel 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<17>          X...X...X............................... 3
+DataOut<18>          .X...X..X............................... 3
+DataOut<19>          ..X...X.X............................... 3
+DataOut<1>           ...X...XX............................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1   C9    I/O     I
+DataOut<20>           2       0     0   3     FB4_2   A7    I/O     O
+(unused)              0       0     0   5     FB4_3   A5    I/O     
+(unused)              0       0     0   5     FB4_4         (b)     
+(unused)              0       0     0   5     FB4_5   D7    I/O     I
+DataOut<21>           2       0     0   3     FB4_6   A6    I/O     O
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   B6    I/O     I
+(unused)              0       0     0   5     FB4_9   C6    I/O     I
+(unused)              0       0     0   5     FB4_10  C5    I/O     
+DataOut<22>           2       0     0   3     FB4_11  D6    I/O     O
+(unused)              0       0     0   5     FB4_12  B5    I/O     I
+(unused)              0       0     0   5     FB4_13  A4    I/O     I
+(unused)              0       0     0   5     FB4_14  D5    I/O     
+DataOut<23>           2       0     0   3     FB4_15  B4    I/O     O
+(unused)              0       0     0   5     FB4_16  C4    I/O     
+(unused)              0       0     0   5     FB4_17  A3    I/O     I
+(unused)              0       0     0   5     FB4_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<20>        4: DataIn0<23>        7: DataIn1<22> 
+  2: DataIn0<21>        5: DataIn1<20>        8: DataIn1<23> 
+  3: DataIn0<22>        6: DataIn1<21>        9: Sel 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<20>          X...X...X............................... 3
+DataOut<21>          .X...X..X............................... 3
+DataOut<22>          ..X...X.X............................... 3
+DataOut<23>          ...X...XX............................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB5  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB5_1         (b)     
+DataOut<24>           2       0     0   3     FB5_2   N6    I/O     O
+(unused)              0       0     0   5     FB5_3   L8    I/O     
+(unused)              0       0     0   5     FB5_4         (b)     
+(unused)              0       0     0   5     FB5_5   M7    I/O     I
+(unused)              0       0     0   5     FB5_6   N7    I/O     I
+DataOut<25>           2       0     0   3     FB5_7   M10   I/O     O
+(unused)              0       0     0   5     FB5_8   K7    I/O     I
+(unused)              0       0     0   5     FB5_9   N8    I/O     I
+(unused)              0       0     0   5     FB5_10  N11   I/O     I
+DataOut<26>           2       0     0   3     FB5_11  M8    I/O     O
+(unused)              0       0     0   5     FB5_12  K8    I/O     I
+(unused)              0       0     0   5     FB5_13  L11   I/O     I
+(unused)              0       0     0   5     FB5_14  N9    I/O     
+DataOut<27>           2       0     0   3     FB5_15  K9    I/O     O
+(unused)              0       0     0   5     FB5_16        (b)     
+(unused)              0       0     0   5     FB5_17  M11   I/O     I
+(unused)              0       0     0   5     FB5_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<24>        4: DataIn0<27>        7: DataIn1<26> 
+  2: DataIn0<25>        5: DataIn1<24>        8: DataIn1<27> 
+  3: DataIn0<26>        6: DataIn1<25>        9: Sel 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<24>          X...X...X............................... 3
+DataOut<25>          .X...X..X............................... 3
+DataOut<26>          ..X...X.X............................... 3
+DataOut<27>          ...X...XX............................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB6  ***********************************
+Number of function block inputs used/remaining:               7/47
+Number of signals used by logic mapping into function block:  7
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB6_1         (b)     
+DataOut<29>           2       0     0   3     FB6_2   C11   I/O     O
+(unused)              0       0     0   5     FB6_3         (b)     
+(unused)              0       0     0   5     FB6_4   B11   I/O     I
+(unused)              0       0     0   5     FB6_5   A12   I/O     I
+(unused)              0       0     0   5     FB6_6   A11   I/O     I
+(unused)              0       0     0   5     FB6_7         (b)     
+DataOut<2>            2       0     0   3     FB6_8   D10   I/O     O
+(unused)              0       0     0   5     FB6_9   A10   I/O     I
+(unused)              0       0     0   5     FB6_10  B10   I/O     I
+(unused)              0       0     0   5     FB6_11  B9    I/O     I
+DataOut<30>           2       0     0   3     FB6_12  A9    I/O     O
+(unused)              0       0     0   5     FB6_13        (b)     
+(unused)              0       0     0   5     FB6_14  D8    I/O     I
+(unused)              0       0     0   5     FB6_15  A8    I/O     I
+(unused)              0       0     0   5     FB6_16  D9    I/O     
+(unused)              0       0     0   5     FB6_17  B7    I/O     I
+(unused)              0       0     0   5     FB6_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<29>        4: DataIn1<29>        6: DataIn1<30> 
+  2: DataIn0<2>         5: DataIn1<2>         7: Sel 
+  3: DataIn0<30>      
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<29>          X..X..X................................. 3
+DataOut<2>           .X..X.X................................. 3
+DataOut<30>          ..X..XX................................. 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB7  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB7_1         (b)     
+DataOut<31>           2       0     0   3     FB7_2   N12   I/O     O
+(unused)              0       0     0   5     FB7_3   L12   I/O     I
+(unused)              0       0     0   5     FB7_4         (b)     
+(unused)              0       0     0   5     FB7_5   M13   I/O     I
+(unused)              0       0     0   5     FB7_6   L13   I/O     I
+DataOut<3>            2       0     0   3     FB7_7   K10   I/O     O
+(unused)              0       0     0   5     FB7_8   K11   I/O     I
+(unused)              0       0     0   5     FB7_9   K13   I/O     I
+(unused)              0       0     0   5     FB7_10  K12   I/O     
+DataOut<4>            2       0     0   3     FB7_11  J11   I/O     O
+(unused)              0       0     0   5     FB7_12  H10   I/O     
+(unused)              0       0     0   5     FB7_13  J10   I/O     I
+(unused)              0       0     0   5     FB7_14  H11   I/O     I
+DataOut<5>            2       0     0   3     FB7_15  H12   I/O     O
+(unused)              0       0     0   5     FB7_16  J12   I/O     
+(unused)              0       0     0   5     FB7_17  H13   I/O     
+(unused)              0       0     0   5     FB7_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<31>        4: DataIn0<5>         7: DataIn1<4> 
+  2: DataIn0<3>         5: DataIn1<31>        8: DataIn1<5> 
+  3: DataIn0<4>         6: DataIn1<3>         9: Sel 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<31>          X...X...X............................... 3
+DataOut<3>           .X...X..X............................... 3
+DataOut<4>           ..X...X.X............................... 3
+DataOut<5>           ...X...XX............................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB8  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB8_1         (b)     
+DataOut<6>            2       0     0   3     FB8_2   G11   I/O     O
+(unused)              0       0     0   5     FB8_3   F11   I/O     I
+(unused)              0       0     0   5     FB8_4   E13   I/O     I
+(unused)              0       0     0   5     FB8_5   G10   I/O     I
+DataOut<7>            2       0     0   3     FB8_6   F13   I/O     O
+(unused)              0       0     0   5     FB8_7         (b)     
+(unused)              0       0     0   5     FB8_8   F12   I/O     I
+(unused)              0       0     0   5     FB8_9   F10   I/O     I
+(unused)              0       0     0   5     FB8_10  D13   I/O     
+DataOut<8>            2       0     0   3     FB8_11  E12   I/O     O
+(unused)              0       0     0   5     FB8_12  E10   I/O     I
+(unused)              0       0     0   5     FB8_13  D11   I/O     I
+(unused)              0       0     0   5     FB8_14  D12   I/O     I
+DataOut<9>            2       0     0   3     FB8_15  C13   I/O     O
+(unused)              0       0     0   5     FB8_16  B13   I/O     I
+(unused)              0       0     0   5     FB8_17  C12   I/O     I
+(unused)              0       0     0   5     FB8_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: DataIn0<6>         4: DataIn0<9>         7: DataIn1<8> 
+  2: DataIn0<7>         5: DataIn1<6>         8: DataIn1<9> 
+  3: DataIn0<8>         6: DataIn1<7>         9: Sel 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DataOut<6>           X...X...X............................... 3
+DataOut<7>           .X...X..X............................... 3
+DataOut<8>           ..X...X.X............................... 3
+DataOut<9>           ...X...XX............................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+DataOut(0) <= ((Sel AND DataIn1(0))
+	OR (NOT Sel AND DataIn0(0)));
+
+
+DataOut(1) <= ((Sel AND DataIn1(1))
+	OR (NOT Sel AND DataIn0(1)));
+
+
+DataOut(2) <= ((Sel AND DataIn1(2))
+	OR (NOT Sel AND DataIn0(2)));
+
+
+DataOut(3) <= ((Sel AND DataIn1(3))
+	OR (NOT Sel AND DataIn0(3)));
+
+
+DataOut(4) <= ((Sel AND DataIn1(4))
+	OR (NOT Sel AND DataIn0(4)));
+
+
+DataOut(5) <= ((Sel AND DataIn1(5))
+	OR (NOT Sel AND DataIn0(5)));
+
+
+DataOut(6) <= ((Sel AND DataIn1(6))
+	OR (NOT Sel AND DataIn0(6)));
+
+
+DataOut(7) <= ((Sel AND DataIn1(7))
+	OR (NOT Sel AND DataIn0(7)));
+
+
+DataOut(8) <= ((Sel AND DataIn1(8))
+	OR (NOT Sel AND DataIn0(8)));
+
+
+DataOut(9) <= ((Sel AND DataIn1(9))
+	OR (NOT Sel AND DataIn0(9)));
+
+
+DataOut(10) <= ((Sel AND DataIn1(10))
+	OR (NOT Sel AND DataIn0(10)));
+
+
+DataOut(11) <= ((Sel AND DataIn1(11))
+	OR (NOT Sel AND DataIn0(11)));
+
+
+DataOut(12) <= ((Sel AND DataIn1(12))
+	OR (NOT Sel AND DataIn0(12)));
+
+
+DataOut(13) <= ((Sel AND DataIn1(13))
+	OR (NOT Sel AND DataIn0(13)));
+
+
+DataOut(14) <= ((Sel AND DataIn1(14))
+	OR (NOT Sel AND DataIn0(14)));
+
+
+DataOut(15) <= ((Sel AND DataIn1(15))
+	OR (NOT Sel AND DataIn0(15)));
+
+
+DataOut(16) <= ((Sel AND DataIn1(16))
+	OR (NOT Sel AND DataIn0(16)));
+
+
+DataOut(17) <= ((Sel AND DataIn1(17))
+	OR (NOT Sel AND DataIn0(17)));
+
+
+DataOut(18) <= ((Sel AND DataIn1(18))
+	OR (NOT Sel AND DataIn0(18)));
+
+
+DataOut(19) <= ((Sel AND DataIn1(19))
+	OR (NOT Sel AND DataIn0(19)));
+
+
+DataOut(20) <= ((Sel AND DataIn1(20))
+	OR (NOT Sel AND DataIn0(20)));
+
+
+DataOut(21) <= ((Sel AND DataIn1(21))
+	OR (NOT Sel AND DataIn0(21)));
+
+
+DataOut(22) <= ((Sel AND DataIn1(22))
+	OR (NOT Sel AND DataIn0(22)));
+
+
+DataOut(23) <= ((Sel AND DataIn1(23))
+	OR (NOT Sel AND DataIn0(23)));
+
+
+DataOut(24) <= ((Sel AND DataIn1(24))
+	OR (NOT Sel AND DataIn0(24)));
+
+
+DataOut(25) <= ((Sel AND DataIn1(25))
+	OR (NOT Sel AND DataIn0(25)));
+
+
+DataOut(26) <= ((Sel AND DataIn1(26))
+	OR (NOT Sel AND DataIn0(26)));
+
+
+DataOut(27) <= ((Sel AND DataIn1(27))
+	OR (NOT Sel AND DataIn0(27)));
+
+
+DataOut(28) <= ((Sel AND DataIn1(28))
+	OR (NOT Sel AND DataIn0(28)));
+
+
+DataOut(29) <= ((Sel AND DataIn1(29))
+	OR (NOT Sel AND DataIn0(29)));
+
+
+DataOut(30) <= ((Sel AND DataIn1(30))
+	OR (NOT Sel AND DataIn0(30)));
+
+
+DataOut(31) <= ((Sel AND DataIn1(31))
+	OR (NOT Sel AND DataIn0(31)));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XA95144XL-15-CS144
+
+
+                     _____________________________________________________
+                    /                                                     \
+                   1|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   2|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   3|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   4|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   5|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   6|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   7|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   8|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   9|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                  10|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  11|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  12|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  13|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    \_____________________________________________________/
+                       A   B   C   D   E   F   G   H   J   K   L   M   N   
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+ A1 VCC                             G10 DataIn1<17>                   
+ A2 DataIn1<21>                     G11 DataOut<6>                    
+ A3 DataIn1<15>                     G12 GND                           
+ A4 DataIn0<30>                     G13 GND                           
+ A5 KPR                              H1 DataOut<11>                   
+ A6 DataOut<21>                      H2 DataIn1<18>                   
+ A7 DataOut<20>                      H3 DataOut<0>                    
+ A8 DataIn1<12>                      H4 DataOut<12>                   
+ A9 DataOut<30>                     H10 KPR                           
+A10 DataIn0<7>                      H11 DataIn1<24>                   
+A11 DataIn1<2>                      H12 DataOut<5>                    
+A12 DataIn0<12>                     H13 KPR                           
+A13 VCC                              J1 DataOut<10>                   
+ B1 DataIn1<14>                      J2 DataIn1<25>                   
+ B2 GND                              J3 KPR                           
+ B3 VCC                              J4 DataOut<28>                   
+ B4 DataOut<23>                     J10 DataIn1<8>                    
+ B5 DataIn0<5>                      J11 DataOut<4>                    
+ B6 DataIn1<30>                     J12 KPR                           
+ B7 DataIn1<29>                     J13 VCC                           
+ B8 GND                              K1 GND                           
+ B9 DataIn0<0>                       K2 DataIn0<25>                   
+B10 DataIn0<9>                       K3 DataIn1<19>                   
+B11 Sel                              K4 DataOut<17>                   
+B12 GND                              K5 DataOut<1>                    
+B13 DataIn0<26>                      K6 DataIn1<1>                    
+ C1 DataOut<13>                      K7 DataIn1<6>                    
+ C2 DataIn0<4>                       K8 DataIn0<31>                   
+ C3 KPR                              K9 DataOut<27>                   
+ C4 KPR                             K10 DataOut<3>                    
+ C5 KPR                             K11 DataIn1<26>                   
+ C6 DataIn0<21>                     K12 KPR                           
+ C7 VCC                             K13 DataIn1<3>                    
+ C8 TDO                              L1 KPR                           
+ C9 DataIn0<11>                      L2 DataOut<18>                   
+C10 GND                              L3 DataIn0<17>                   
+C11 DataOut<29>                      L4 VCC                           
+C12 DataIn0<27>                      L5 DataIn1<9>                    
+C13 DataOut<9>                       L6 KPR                           
+ D1 VCC                              L7 VCC                           
+ D2 DataOut<14>                      L8 KPR                           
+ D3 KPR                              L9 TDI                           
+ D4 DataIn1<22>                     L10 TCK                           
+ D5 KPR                             L11 DataIn1<10>                   
+ D6 DataOut<22>                     L12 DataIn0<20>                   
+ D7 DataIn0<22>                     L13 DataIn1<0>                    
+ D8 DataIn0<23>                      M1 DataIn1<27>                   
+ D9 KPR                              M2 GND                           
+D10 DataOut<2>                       M3 DataIn0<19>                   
+D11 DataIn0<14>                      M4 DataIn0<13>                   
+D12 DataIn0<15>                      M5 GND                           
+D13 KPR                              M6 KPR                           
+ E1 DataIn1<20>                      M7 DataIn1<31>                   
+ E2 DataOut<15>                      M8 DataOut<26>                   
+ E3 DataIn0<2>                       M9 GND                           
+ E4 DataIn0<8>                      M10 DataOut<25>                   
+E10 DataIn1<5>                      M11 DataIn0<6>                    
+E11 GND                             M12 GND                           
+E12 DataOut<8>                      M13 DataIn0<18>                   
+E13 DataIn0<28>                      N1 VCC                           
+ F1 DataIn1<7>                       N2 DataIn1<28>                   
+ F2 DataOut<16>                      N3 DataOut<19>                   
+ F3 DataIn0<10>                      N4 KPR                           
+ F4 DataIn0<16>                      N5 KPR                           
+F10 DataIn1<16>                      N6 DataOut<24>                   
+F11 DataIn1<23>                      N7 DataIn0<24>                   
+F12 DataIn0<1>                       N8 DataIn1<13>                   
+F13 DataOut<7>                       N9 KPR                           
+ G1 GND                             N10 TMS                           
+ G2 DataIn1<4>                      N11 DataIn1<11>                   
+ G3 DataIn0<3>                      N12 DataOut<31>                   
+ G4 DataIn0<29>                     N13 VCC                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xa95*xl-*-*
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : LOW
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

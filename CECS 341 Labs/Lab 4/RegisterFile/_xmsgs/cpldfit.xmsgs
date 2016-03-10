@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Cpld" num="0" delta="new" >Unable to retrieve the path to the iSE Project Repository. Will use the default filename of &apos;<arg fmt="%s" index="1">RegFile32.ise</arg>&apos;.
+</msg>
+
+<msg type="error" file="Cpld" num="837" delta="new" >Insufficient number of macrocells. The design needs at least <arg fmt="%d" index="1">1174</arg> but only <arg fmt="%d" index="2">144</arg> left after allocating other resources.
+</msg>
+
+<msg type="error" file="Cpld" num="868" delta="new" >Cannot fit the design into any of the specified devices with the selected implementation options.
+</msg>
+
+</messages>
+

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/CECS 341 Labs/Lab 3/Lab3Xilinx/ALU.xst" -ofn "F:/CECS 341 Labs/Lab 3/Lab3Xilinx/ALU.syr" 
+xst -intstyle ise -ifn "F:/CECS 341 Labs/Lab 3/Lab3Xilinx/ALU.xst" -ofn "F:/CECS 341 Labs/Lab 3/Lab3Xilinx/ALU.syr" 

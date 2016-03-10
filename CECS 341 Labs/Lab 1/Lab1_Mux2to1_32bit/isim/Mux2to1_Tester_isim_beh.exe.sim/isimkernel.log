@@ -1,0 +1,28 @@
+Command line:
+   Mux2to1_Tester_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  49650
+
+Wed Jan 27 14:06:36 2016
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 800.961 Meg
+
+ Total Signals          : 15
+ Total Nets             : 108
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 285
+
+ Total Simulation Time: 0.483603 sec
+
+ Current Memory Usage: 644.723 Meg
+
+Wed Jan 27 14:21:34 2016
+

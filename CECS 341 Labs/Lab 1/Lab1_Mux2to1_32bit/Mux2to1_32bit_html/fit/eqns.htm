@@ -1,0 +1,523 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "Mux2to1_32bit";
+      var device = "XA95144XL";
+      signals = new Array("DataOut0_SPECSIG","DataOut10_SPECSIG","DataOut11_SPECSIG","DataOut12_SPECSIG","DataOut13_SPECSIG","DataOut14_SPECSIG","DataOut15_SPECSIG","DataOut16_SPECSIG","DataOut17_SPECSIG","DataOut18_SPECSIG","DataOut19_SPECSIG","DataOut1_SPECSIG","DataOut20_SPECSIG","DataOut21_SPECSIG","DataOut22_SPECSIG","DataOut23_SPECSIG","DataOut24_SPECSIG","DataOut25_SPECSIG","DataOut26_SPECSIG","DataOut27_SPECSIG","DataOut28_SPECSIG","DataOut29_SPECSIG","DataOut2_SPECSIG","DataOut30_SPECSIG","DataOut31_SPECSIG","DataOut3_SPECSIG","DataOut4_SPECSIG","DataOut5_SPECSIG","DataOut6_SPECSIG","DataOut7_SPECSIG","DataOut8_SPECSIG","DataOut9_SPECSIG");
+      sigNegs = new Array("OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF");
+      sigTypes = new Array("","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","");
+
+      
+        specSig["DataIn10_SPECSIG"]=new Array("DataIn1<0>");
+      
+        specSig["DataIn00_SPECSIG"]=new Array("DataIn0<0>");
+      
+        specSig["DataIn110_SPECSIG"]=new Array("DataIn1<10>");
+      
+        specSig["DataIn010_SPECSIG"]=new Array("DataIn0<10>");
+      
+        specSig["DataIn111_SPECSIG"]=new Array("DataIn1<11>");
+      
+        specSig["DataIn011_SPECSIG"]=new Array("DataIn0<11>");
+      
+        specSig["DataIn112_SPECSIG"]=new Array("DataIn1<12>");
+      
+        specSig["DataIn012_SPECSIG"]=new Array("DataIn0<12>");
+      
+        specSig["DataIn113_SPECSIG"]=new Array("DataIn1<13>");
+      
+        specSig["DataIn013_SPECSIG"]=new Array("DataIn0<13>");
+      
+        specSig["DataIn114_SPECSIG"]=new Array("DataIn1<14>");
+      
+        specSig["DataIn014_SPECSIG"]=new Array("DataIn0<14>");
+      
+        specSig["DataIn115_SPECSIG"]=new Array("DataIn1<15>");
+      
+        specSig["DataIn015_SPECSIG"]=new Array("DataIn0<15>");
+      
+        specSig["DataIn116_SPECSIG"]=new Array("DataIn1<16>");
+      
+        specSig["DataIn016_SPECSIG"]=new Array("DataIn0<16>");
+      
+        specSig["DataIn117_SPECSIG"]=new Array("DataIn1<17>");
+      
+        specSig["DataIn017_SPECSIG"]=new Array("DataIn0<17>");
+      
+        specSig["DataIn118_SPECSIG"]=new Array("DataIn1<18>");
+      
+        specSig["DataIn018_SPECSIG"]=new Array("DataIn0<18>");
+      
+        specSig["DataIn119_SPECSIG"]=new Array("DataIn1<19>");
+      
+        specSig["DataIn019_SPECSIG"]=new Array("DataIn0<19>");
+      
+        specSig["DataIn11_SPECSIG"]=new Array("DataIn1<1>");
+      
+        specSig["DataIn01_SPECSIG"]=new Array("DataIn0<1>");
+      
+        specSig["DataIn120_SPECSIG"]=new Array("DataIn1<20>");
+      
+        specSig["DataIn020_SPECSIG"]=new Array("DataIn0<20>");
+      
+        specSig["DataIn121_SPECSIG"]=new Array("DataIn1<21>");
+      
+        specSig["DataIn021_SPECSIG"]=new Array("DataIn0<21>");
+      
+        specSig["DataIn122_SPECSIG"]=new Array("DataIn1<22>");
+      
+        specSig["DataIn022_SPECSIG"]=new Array("DataIn0<22>");
+      
+        specSig["DataIn123_SPECSIG"]=new Array("DataIn1<23>");
+      
+        specSig["DataIn023_SPECSIG"]=new Array("DataIn0<23>");
+      
+        specSig["DataIn124_SPECSIG"]=new Array("DataIn1<24>");
+      
+        specSig["DataIn024_SPECSIG"]=new Array("DataIn0<24>");
+      
+        specSig["DataIn125_SPECSIG"]=new Array("DataIn1<25>");
+      
+        specSig["DataIn025_SPECSIG"]=new Array("DataIn0<25>");
+      
+        specSig["DataIn126_SPECSIG"]=new Array("DataIn1<26>");
+      
+        specSig["DataIn026_SPECSIG"]=new Array("DataIn0<26>");
+      
+        specSig["DataIn127_SPECSIG"]=new Array("DataIn1<27>");
+      
+        specSig["DataIn027_SPECSIG"]=new Array("DataIn0<27>");
+      
+        specSig["DataIn128_SPECSIG"]=new Array("DataIn1<28>");
+      
+        specSig["DataIn028_SPECSIG"]=new Array("DataIn0<28>");
+      
+        specSig["DataIn129_SPECSIG"]=new Array("DataIn1<29>");
+      
+        specSig["DataIn029_SPECSIG"]=new Array("DataIn0<29>");
+      
+        specSig["DataIn12_SPECSIG"]=new Array("DataIn1<2>");
+      
+        specSig["DataIn02_SPECSIG"]=new Array("DataIn0<2>");
+      
+        specSig["DataIn130_SPECSIG"]=new Array("DataIn1<30>");
+      
+        specSig["DataIn030_SPECSIG"]=new Array("DataIn0<30>");
+      
+        specSig["DataIn131_SPECSIG"]=new Array("DataIn1<31>");
+      
+        specSig["DataIn031_SPECSIG"]=new Array("DataIn0<31>");
+      
+        specSig["DataIn13_SPECSIG"]=new Array("DataIn1<3>");
+      
+        specSig["DataIn03_SPECSIG"]=new Array("DataIn0<3>");
+      
+        specSig["DataIn14_SPECSIG"]=new Array("DataIn1<4>");
+      
+        specSig["DataIn04_SPECSIG"]=new Array("DataIn0<4>");
+      
+        specSig["DataIn15_SPECSIG"]=new Array("DataIn1<5>");
+      
+        specSig["DataIn05_SPECSIG"]=new Array("DataIn0<5>");
+      
+        specSig["DataIn16_SPECSIG"]=new Array("DataIn1<6>");
+      
+        specSig["DataIn06_SPECSIG"]=new Array("DataIn0<6>");
+      
+        specSig["DataIn17_SPECSIG"]=new Array("DataIn1<7>");
+      
+        specSig["DataIn07_SPECSIG"]=new Array("DataIn0<7>");
+      
+        specSig["DataIn18_SPECSIG"]=new Array("DataIn1<8>");
+      
+        specSig["DataIn08_SPECSIG"]=new Array("DataIn0<8>");
+      
+        specSig["DataIn19_SPECSIG"]=new Array("DataIn1<9>");
+      
+        specSig["DataIn09_SPECSIG"]=new Array("DataIn0<9>");
+      
+        specSig["DataOut0_SPECSIG"]=new Array("DataOut<0>");
+      
+        specSig["DataOut10_SPECSIG"]=new Array("DataOut<10>");
+      
+        specSig["DataOut11_SPECSIG"]=new Array("DataOut<11>");
+      
+        specSig["DataOut12_SPECSIG"]=new Array("DataOut<12>");
+      
+        specSig["DataOut28_SPECSIG"]=new Array("DataOut<28>");
+      
+        specSig["DataOut13_SPECSIG"]=new Array("DataOut<13>");
+      
+        specSig["DataOut14_SPECSIG"]=new Array("DataOut<14>");
+      
+        specSig["DataOut15_SPECSIG"]=new Array("DataOut<15>");
+      
+        specSig["DataOut16_SPECSIG"]=new Array("DataOut<16>");
+      
+        specSig["DataOut17_SPECSIG"]=new Array("DataOut<17>");
+      
+        specSig["DataOut18_SPECSIG"]=new Array("DataOut<18>");
+      
+        specSig["DataOut19_SPECSIG"]=new Array("DataOut<19>");
+      
+        specSig["DataOut1_SPECSIG"]=new Array("DataOut<1>");
+      
+        specSig["DataOut20_SPECSIG"]=new Array("DataOut<20>");
+      
+        specSig["DataOut21_SPECSIG"]=new Array("DataOut<21>");
+      
+        specSig["DataOut22_SPECSIG"]=new Array("DataOut<22>");
+      
+        specSig["DataOut23_SPECSIG"]=new Array("DataOut<23>");
+      
+        specSig["DataOut24_SPECSIG"]=new Array("DataOut<24>");
+      
+        specSig["DataOut25_SPECSIG"]=new Array("DataOut<25>");
+      
+        specSig["DataOut26_SPECSIG"]=new Array("DataOut<26>");
+      
+        specSig["DataOut27_SPECSIG"]=new Array("DataOut<27>");
+      
+        specSig["DataOut29_SPECSIG"]=new Array("DataOut<29>");
+      
+        specSig["DataOut2_SPECSIG"]=new Array("DataOut<2>");
+      
+        specSig["DataOut30_SPECSIG"]=new Array("DataOut<30>");
+      
+        specSig["DataOut31_SPECSIG"]=new Array("DataOut<31>");
+      
+        specSig["DataOut3_SPECSIG"]=new Array("DataOut<3>");
+      
+        specSig["DataOut4_SPECSIG"]=new Array("DataOut<4>");
+      
+        specSig["DataOut5_SPECSIG"]=new Array("DataOut<5>");
+      
+        specSig["DataOut6_SPECSIG"]=new Array("DataOut<6>");
+      
+        specSig["DataOut7_SPECSIG"]=new Array("DataOut<7>");
+      
+        specSig["DataOut8_SPECSIG"]=new Array("DataOut<8>");
+      
+        specSig["DataOut9_SPECSIG"]=new Array("DataOut<9>");
+      
+            pterms["FB1_1_1"]=new Array("Sel","DataIn10_SPECSIG");
+          
+            pterms["FB1_1_2"]=new Array("/Sel","DataIn00_SPECSIG");
+          
+            pterms["FB1_4_1"]=new Array("Sel","DataIn110_SPECSIG");
+          
+            pterms["FB1_4_2"]=new Array("/Sel","DataIn010_SPECSIG");
+          
+            pterms["FB1_8_1"]=new Array("Sel","DataIn111_SPECSIG");
+          
+            pterms["FB1_8_2"]=new Array("/Sel","DataIn011_SPECSIG");
+          
+            pterms["FB1_11_1"]=new Array("Sel","DataIn112_SPECSIG");
+          
+            pterms["FB1_11_2"]=new Array("/Sel","DataIn012_SPECSIG");
+          
+            pterms["FB1_15_1"]=new Array("Sel","DataIn128_SPECSIG");
+          
+            pterms["FB1_15_2"]=new Array("/Sel","DataIn028_SPECSIG");
+          
+            pterms["FB2_4_1"]=new Array("Sel","DataIn113_SPECSIG");
+          
+            pterms["FB2_4_2"]=new Array("/Sel","DataIn013_SPECSIG");
+          
+            pterms["FB2_10_1"]=new Array("Sel","DataIn114_SPECSIG");
+          
+            pterms["FB2_10_2"]=new Array("/Sel","DataIn014_SPECSIG");
+          
+            pterms["FB2_14_1"]=new Array("Sel","DataIn115_SPECSIG");
+          
+            pterms["FB2_14_2"]=new Array("/Sel","DataIn015_SPECSIG");
+          
+            pterms["FB2_17_1"]=new Array("Sel","DataIn116_SPECSIG");
+          
+            pterms["FB2_17_2"]=new Array("/Sel","DataIn016_SPECSIG");
+          
+            pterms["FB3_3_1"]=new Array("Sel","DataIn117_SPECSIG");
+          
+            pterms["FB3_3_2"]=new Array("/Sel","DataIn017_SPECSIG");
+          
+            pterms["FB3_5_1"]=new Array("Sel","DataIn118_SPECSIG");
+          
+            pterms["FB3_5_2"]=new Array("/Sel","DataIn018_SPECSIG");
+          
+            pterms["FB3_9_1"]=new Array("Sel","DataIn119_SPECSIG");
+          
+            pterms["FB3_9_2"]=new Array("/Sel","DataIn019_SPECSIG");
+          
+            pterms["FB3_12_1"]=new Array("Sel","DataIn11_SPECSIG");
+          
+            pterms["FB3_12_2"]=new Array("/Sel","DataIn01_SPECSIG");
+          
+            pterms["FB4_2_1"]=new Array("Sel","DataIn120_SPECSIG");
+          
+            pterms["FB4_2_2"]=new Array("/Sel","DataIn020_SPECSIG");
+          
+            pterms["FB4_6_1"]=new Array("Sel","DataIn121_SPECSIG");
+          
+            pterms["FB4_6_2"]=new Array("/Sel","DataIn021_SPECSIG");
+          
+            pterms["FB4_11_1"]=new Array("Sel","DataIn122_SPECSIG");
+          
+            pterms["FB4_11_2"]=new Array("/Sel","DataIn022_SPECSIG");
+          
+            pterms["FB4_15_1"]=new Array("Sel","DataIn123_SPECSIG");
+          
+            pterms["FB4_15_2"]=new Array("/Sel","DataIn023_SPECSIG");
+          
+            pterms["FB5_2_1"]=new Array("Sel","DataIn124_SPECSIG");
+          
+            pterms["FB5_2_2"]=new Array("/Sel","DataIn024_SPECSIG");
+          
+            pterms["FB5_7_1"]=new Array("Sel","DataIn125_SPECSIG");
+          
+            pterms["FB5_7_2"]=new Array("/Sel","DataIn025_SPECSIG");
+          
+            pterms["FB5_11_1"]=new Array("Sel","DataIn126_SPECSIG");
+          
+            pterms["FB5_11_2"]=new Array("/Sel","DataIn026_SPECSIG");
+          
+            pterms["FB5_15_1"]=new Array("Sel","DataIn127_SPECSIG");
+          
+            pterms["FB5_15_2"]=new Array("/Sel","DataIn027_SPECSIG");
+          
+            pterms["FB6_2_1"]=new Array("Sel","DataIn129_SPECSIG");
+          
+            pterms["FB6_2_2"]=new Array("/Sel","DataIn029_SPECSIG");
+          
+            pterms["FB6_8_1"]=new Array("Sel","DataIn12_SPECSIG");
+          
+            pterms["FB6_8_2"]=new Array("/Sel","DataIn02_SPECSIG");
+          
+            pterms["FB6_12_1"]=new Array("Sel","DataIn130_SPECSIG");
+          
+            pterms["FB6_12_2"]=new Array("/Sel","DataIn030_SPECSIG");
+          
+            pterms["FB7_2_1"]=new Array("Sel","DataIn131_SPECSIG");
+          
+            pterms["FB7_2_2"]=new Array("/Sel","DataIn031_SPECSIG");
+          
+            pterms["FB7_7_1"]=new Array("Sel","DataIn13_SPECSIG");
+          
+            pterms["FB7_7_2"]=new Array("/Sel","DataIn03_SPECSIG");
+          
+            pterms["FB7_11_1"]=new Array("Sel","DataIn14_SPECSIG");
+          
+            pterms["FB7_11_2"]=new Array("/Sel","DataIn04_SPECSIG");
+          
+            pterms["FB7_15_1"]=new Array("Sel","DataIn15_SPECSIG");
+          
+            pterms["FB7_15_2"]=new Array("/Sel","DataIn05_SPECSIG");
+          
+            pterms["FB8_2_1"]=new Array("Sel","DataIn16_SPECSIG");
+          
+            pterms["FB8_2_2"]=new Array("/Sel","DataIn06_SPECSIG");
+          
+            pterms["FB8_6_1"]=new Array("Sel","DataIn17_SPECSIG");
+          
+            pterms["FB8_6_2"]=new Array("/Sel","DataIn07_SPECSIG");
+          
+            pterms["FB8_11_1"]=new Array("Sel","DataIn18_SPECSIG");
+          
+            pterms["FB8_11_2"]=new Array("/Sel","DataIn08_SPECSIG");
+          
+            pterms["FB8_15_1"]=new Array("Sel","DataIn19_SPECSIG");
+          
+            pterms["FB8_15_2"]=new Array("/Sel","DataIn09_SPECSIG");
+          
+          d2["DataOut0_SPECSIG"]=new Array("FB1_1_1","FB1_1_2");
+          
+            d2imp["DataOut0_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut10_SPECSIG"]=new Array("FB1_4_1","FB1_4_2");
+          
+            d2imp["DataOut10_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut11_SPECSIG"]=new Array("FB1_8_1","FB1_8_2");
+          
+            d2imp["DataOut11_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut12_SPECSIG"]=new Array("FB1_11_1","FB1_11_2");
+          
+            d2imp["DataOut12_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut28_SPECSIG"]=new Array("FB1_15_1","FB1_15_2");
+          
+            d2imp["DataOut28_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut13_SPECSIG"]=new Array("FB2_4_1","FB2_4_2");
+          
+            d2imp["DataOut13_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut14_SPECSIG"]=new Array("FB2_10_1","FB2_10_2");
+          
+            d2imp["DataOut14_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut15_SPECSIG"]=new Array("FB2_14_1","FB2_14_2");
+          
+            d2imp["DataOut15_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut16_SPECSIG"]=new Array("FB2_17_1","FB2_17_2");
+          
+            d2imp["DataOut16_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut17_SPECSIG"]=new Array("FB3_3_1","FB3_3_2");
+          
+            d2imp["DataOut17_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut18_SPECSIG"]=new Array("FB3_5_1","FB3_5_2");
+          
+            d2imp["DataOut18_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut19_SPECSIG"]=new Array("FB3_9_1","FB3_9_2");
+          
+            d2imp["DataOut19_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut1_SPECSIG"]=new Array("FB3_12_1","FB3_12_2");
+          
+            d2imp["DataOut1_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut20_SPECSIG"]=new Array("FB4_2_1","FB4_2_2");
+          
+            d2imp["DataOut20_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut21_SPECSIG"]=new Array("FB4_6_1","FB4_6_2");
+          
+            d2imp["DataOut21_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut22_SPECSIG"]=new Array("FB4_11_1","FB4_11_2");
+          
+            d2imp["DataOut22_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut23_SPECSIG"]=new Array("FB4_15_1","FB4_15_2");
+          
+            d2imp["DataOut23_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut24_SPECSIG"]=new Array("FB5_2_1","FB5_2_2");
+          
+            d2imp["DataOut24_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut25_SPECSIG"]=new Array("FB5_7_1","FB5_7_2");
+          
+            d2imp["DataOut25_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut26_SPECSIG"]=new Array("FB5_11_1","FB5_11_2");
+          
+            d2imp["DataOut26_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut27_SPECSIG"]=new Array("FB5_15_1","FB5_15_2");
+          
+            d2imp["DataOut27_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut29_SPECSIG"]=new Array("FB6_2_1","FB6_2_2");
+          
+            d2imp["DataOut29_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut2_SPECSIG"]=new Array("FB6_8_1","FB6_8_2");
+          
+            d2imp["DataOut2_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut30_SPECSIG"]=new Array("FB6_12_1","FB6_12_2");
+          
+            d2imp["DataOut30_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut31_SPECSIG"]=new Array("FB7_2_1","FB7_2_2");
+          
+            d2imp["DataOut31_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut3_SPECSIG"]=new Array("FB7_7_1","FB7_7_2");
+          
+            d2imp["DataOut3_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut4_SPECSIG"]=new Array("FB7_11_1","FB7_11_2");
+          
+            d2imp["DataOut4_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut5_SPECSIG"]=new Array("FB7_15_1","FB7_15_2");
+          
+            d2imp["DataOut5_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut6_SPECSIG"]=new Array("FB8_2_1","FB8_2_2");
+          
+            d2imp["DataOut6_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut7_SPECSIG"]=new Array("FB8_6_1","FB8_6_2");
+          
+            d2imp["DataOut7_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut8_SPECSIG"]=new Array("FB8_11_1","FB8_11_2");
+          
+            d2imp["DataOut8_SPECSIG"]=new Array("1","1");
+          
+          d2["DataOut9_SPECSIG"]=new Array("FB8_15_1","FB8_15_2");
+          
+            d2imp["DataOut9_SPECSIG"]=new Array("1","1");
+          
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

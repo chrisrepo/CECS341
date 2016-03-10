@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_32bit.xst" -ofn "E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_32bit.syr" 
+xst -intstyle ise -ifn "E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_32bit.xst" -ofn "E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_32bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl "Mux2to1_32bit.ngc" Mux2to1_32bit.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Mux2to1_32bit.ngd 
+XSLTProcess Mux2to1_32bit_build.xml 
+tsim -intstyle ise Mux2to1_32bit Mux2to1_32bit.nga 
+taengine -intstyle ise -f Mux2to1_32bit -w --format html1 -l Mux2to1_32bit_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Mux2to1_32bit -i Mux2to1_32bit 
+xst -intstyle ise -ifn "E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_32bit.xst" -ofn "E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_32bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl "Mux2to1_32bit.ngc" Mux2to1_32bit.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Mux2to1_32bit.ngd 
+XSLTProcess Mux2to1_32bit_build.xml 
+tsim -intstyle ise Mux2to1_32bit Mux2to1_32bit.nga 
+hprep6 -s IEEE1149 -n Mux2to1_32bit -i Mux2to1_32bit 

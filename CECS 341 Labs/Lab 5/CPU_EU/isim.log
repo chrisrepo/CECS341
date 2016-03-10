@@ -1,0 +1,68 @@
+ISim log file
+Running: E:\CECS 341 Labs\Lab 5\CPU_EU\CPU_EU_Test_isim_beh.exe -gui -tclbatch isim.cmd -wdb E:/CECS 341 Labs/Lab 5/CPU_EU/CPU_EU_Test_isim_beh.wdb 
+ISim M.63c (signature 0xb869381d)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+--------------------------Test R-Type Instructions------------------------------
+
+Test case 1: nor $30, $31, $31
+Expected result: $30 <-0xef96998e
+Actual Result: $30 = 0xef96998e
+
+
+Test case 2: slt $29, $31, $30
+Expected result: $29 <-0x1
+Actual Result: $29 = 0x00000001
+
+
+Test case 3: OR $28, $30, $31
+Expected result: $28 <-0xffffffff
+Actual Result: $28 = 0xffffffff
+
+
+Test case 4: AND $27, $28, $29
+Expected result of 0xffffffff & 0x00000001: $27 <-0x00000001
+Actual Result: $27 = 0x00000001
+
+
+Test case 5: SUB $26, $30, $27
+Expected result of 0xef96998e - 0x00000001: $26 <-0xef96998d
+Actual Result: $26 = 0xef96998d
+
+
+Test case 6: ADD $25, $31, $31
+Expected result of 0x10696671 + 0x10696671: $25 <-0x20d2cce2
+Actual Result: $25 = 0x20d2cce2
+
+--------------------------Test I-Type Memory Access Instructions------------------------------
+
+Test case 3: lw $24, 4($0) Data_From_RAM = 0x12341234
+Expected Results: 
+	RAM_Address = xxxxxxxx
+	$24 = 12341234
+Actual Result: 
+	RAM_Address = xxxxxxxx
+	$24 < 0xxxxxxxxx
+
+
+Test case 3: OR $28, $30, $31
+Expected result: $28 <-0xffffffff
+Actual Result: $28 = 0xffffffff
+
+
+Test case 3: OR $28, $30, $31
+Expected result: $28 <-0xffffffff
+Actual Result: $28 = 0xffffffff
+
+Stopped at time : 201 ns :  in File "E:/CECS 341 Labs/Lab 5/CPU_EU/CPU_EU_Test.v" Line 283 

@@ -1,0 +1,17 @@
+ISim log file
+Running: E:\CECS 341 Labs\Lab1_Mux2to1_32bit\Mux2to1_Tester_isim_beh.exe -gui -tclbatch isim.cmd -wdb E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_Tester_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim M.63c (signature 0xb869381d)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 40 ns :  in File "E:/CECS 341 Labs/Lab1_Mux2to1_32bit/Mux2to1_Tester.v" Line 50 

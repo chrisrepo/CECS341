@@ -1,0 +1,9 @@
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'CPU_EU.ise'.
+ERROR:Cpld:847 - Insufficient number of input pins.  This design needs at least
+   63 but only 20 left after allocating other resources.
+ERROR:Cpld:29 - Device XA95144XL-15-CS144 was disqualified.
+ERROR:Cpld - The design requires too many resources to fit in any of the
+   specified devices or design rule checks prevent this design from fitting.
+ERROR:Cpld:868 - Cannot fit the design into any of the specified devices with
+   the selected implementation options.

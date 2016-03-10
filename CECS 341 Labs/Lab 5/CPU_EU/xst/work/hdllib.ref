@@ -1,0 +1,7 @@
+MO Mux2to1_32bit NULL "../../Lab 1/Lab1_Mux2to1_32bit/Mux2to1_32bit.v" vlg2B/_mux2to1__32bit.bin 1457565511
+MO Mux2to1_5bit NULL Mux2to1_5bit.v vlg63/_mux2to1__5bit.bin 1457565511
+MO CPU_EU NULL CPU_EU.v vlg25/_c_p_u___e_u.bin 1457565511
+MO ALU_Control NULL "../../Lab 3/Lab3Xilinx/ALU_Control.v" vlg5E/_a_l_u___control.bin 1457565511
+MO SignExtend_16to32 NULL SignExtend_16to32.v vlg07/_sign_extend__16to32.bin 1457565511
+MO ALU NULL "../../Lab 3/Lab3Xilinx/ALU.v" vlg2A/_a_l_u.bin 1457565511
+MO RegFile32 NULL "../../Lab 4/RegisterFile/RegFile32.v" vlg13/_reg_file32.bin 1457565511

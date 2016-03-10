@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab1_Mux2to1_32bit.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Mux2to1_32bit.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Mux2to1_32bit.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="Mux2to1_32bit.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="Mux2to1_32bit.jed"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Mux2to1_32bit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="Mux2to1_32bit.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="Mux2to1_32bit.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Mux2to1_32bit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Mux2to1_32bit.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Mux2to1_32bit.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Mux2to1_32bit.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="Mux2to1_32bit.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mux2to1_32bit.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Mux2to1_32bit.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Mux2to1_32bit.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Mux2to1_32bit.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Mux2to1_32bit.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Mux2to1_32bit.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Mux2to1_32bit.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Mux2to1_32bit.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Mux2to1_32bit.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Mux2to1_32bit_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Mux2to1_32bit_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Mux2to1_32bit_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mux2to1_32bit_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Mux2to1_32bit_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Mux2to1_32bit_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mux2to1_32bit_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mux2to1_Tester_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Mux2to1_Tester_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Mux2to1_Tester_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1453932236" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1453932236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932362" xil_pn:in_ck="7761007342044651553" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1453932362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux2to1_32bit.v"/>
+      <outfile xil_pn:name="Mux2to1_Tester.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932236" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8187926598048467031" xil_pn:start_ts="1453932236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932362" xil_pn:in_ck="7761007342044651553" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1453932362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux2to1_32bit.v"/>
+      <outfile xil_pn:name="Mux2to1_Tester.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932367" xil_pn:in_ck="7761007342044651553" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3187361194956133045" xil_pn:start_ts="1453932362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Mux2to1_Tester_beh.prj"/>
+      <outfile xil_pn:name="Mux2to1_Tester_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932395" xil_pn:in_ck="3049715510406362277" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7425593703954092264" xil_pn:start_ts="1453932394">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Mux2to1_Tester_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1453931694" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1453931694">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453931694" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1007875793257446140" xil_pn:start_ts="1453931694">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932198" xil_pn:in_ck="-3923783827316101785" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-5781473780889295740" xil_pn:start_ts="1453932194">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux2to1_32bit.lso"/>
+      <outfile xil_pn:name="Mux2to1_32bit.ngc"/>
+      <outfile xil_pn:name="Mux2to1_32bit.ngr"/>
+      <outfile xil_pn:name="Mux2to1_32bit.prj"/>
+      <outfile xil_pn:name="Mux2to1_32bit.stx"/>
+      <outfile xil_pn:name="Mux2to1_32bit.syr"/>
+      <outfile xil_pn:name="Mux2to1_32bit.xst"/>
+      <outfile xil_pn:name="Mux2to1_32bit_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1453931759" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-2963701604359461627" xil_pn:start_ts="1453931759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932202" xil_pn:in_ck="6644037153381125833" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="8764765336521535190" xil_pn:start_ts="1453932198">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux2to1_32bit.bld"/>
+      <outfile xil_pn:name="Mux2to1_32bit.ngd"/>
+      <outfile xil_pn:name="Mux2to1_32bit_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932219" xil_pn:in_ck="6644037153381125834" xil_pn:name="TRANEXT_vm6File_xa9500xl" xil_pn:prop_ck="-76756524291048970" xil_pn:start_ts="1453932202">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux2to1_32bit.gyd"/>
+      <outfile xil_pn:name="Mux2to1_32bit.mfd"/>
+      <outfile xil_pn:name="Mux2to1_32bit.nga"/>
+      <outfile xil_pn:name="Mux2to1_32bit.pad"/>
+      <outfile xil_pn:name="Mux2to1_32bit.pnx"/>
+      <outfile xil_pn:name="Mux2to1_32bit.rpt"/>
+      <outfile xil_pn:name="Mux2to1_32bit.tim"/>
+      <outfile xil_pn:name="Mux2to1_32bit.tspec"/>
+      <outfile xil_pn:name="Mux2to1_32bit.vm6"/>
+      <outfile xil_pn:name="Mux2to1_32bit.xml"/>
+      <outfile xil_pn:name="Mux2to1_32bit_build.xml"/>
+      <outfile xil_pn:name="Mux2to1_32bit_html"/>
+      <outfile xil_pn:name="Mux2to1_32bit_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1453932221" xil_pn:in_ck="6644037153381134698" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="1356632172457111969" xil_pn:start_ts="1453932219">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux2to1_32bit.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1453931786" xil_pn:in_ck="6644037153381134698" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1453931785">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

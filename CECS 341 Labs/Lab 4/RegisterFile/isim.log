@@ -1,0 +1,84 @@
+ISim log file
+Running: E:\CECS 341 Labs\Lab 4\RegisterFile\RegFile32Test_isim_beh.exe -gui -tclbatch isim.cmd -wdb E:/CECS 341 Labs/Lab 4/RegisterFile/RegFile32Test_isim_beh.wdb 
+ISim M.63c (signature 0xb869381d)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Writing to registers
+--------------------
+$ 0 <- 0x12153524
+$ 1 <- 0xc0895e81
+$ 2 <- 0x8484d609
+$ 3 <- 0xb1f05663
+$ 4 <- 0x06b97b0d
+$ 5 <- 0x46df998d
+$ 6 <- 0xb2c28465
+$ 7 <- 0x89375212
+$ 8 <- 0x00f3e301
+$ 9 <- 0x06d7cd0d
+$10 <- 0x3b23f176
+$11 <- 0x1e8dcd3d
+$12 <- 0x76d457ed
+$13 <- 0x462df78c
+$14 <- 0x7cfde9f9
+$15 <- 0xe33724c6
+$16 <- 0xe2f784c5
+$17 <- 0xd513d2aa
+$18 <- 0x72aff7e5
+$19 <- 0xbbd27277
+$20 <- 0x8932d612
+$21 <- 0x47ecdb8f
+$22 <- 0x793069f2
+$23 <- 0xe77696ce
+$24 <- 0xf4007ae8
+$25 <- 0xe2ca4ec5
+$26 <- 0x2e58495c
+$27 <- 0xde8e28bd
+$28 <- 0x96ab582d
+$29 <- 0xb2a72665
+$30 <- 0xb1ef6263
+$31 <- 0x0573870a
+Reading from registers
+----------------------
+$ 0 <- 0x00000000
+$ 1 <- 0xc0895e81
+$ 2 <- 0x8484d609
+$ 3 <- 0xb1f05663
+$ 4 <- 0x06b97b0d
+$ 5 <- 0x46df998d
+$ 6 <- 0xb2c28465
+$ 7 <- 0x89375212
+$ 8 <- 0x00f3e301
+$ 9 <- 0x06d7cd0d
+$10 <- 0x3b23f176
+$11 <- 0x1e8dcd3d
+$12 <- 0x76d457ed
+$13 <- 0x462df78c
+$14 <- 0x7cfde9f9
+$15 <- 0xe33724c6
+$16 <- 0xe2f784c5
+$17 <- 0xd513d2aa
+$18 <- 0x72aff7e5
+$19 <- 0xbbd27277
+$20 <- 0x8932d612
+$21 <- 0x47ecdb8f
+$22 <- 0x793069f2
+$23 <- 0xe77696ce
+$24 <- 0xf4007ae8
+$25 <- 0xe2ca4ec5
+$26 <- 0x2e58495c
+$27 <- 0xde8e28bd
+$28 <- 0x96ab582d
+$29 <- 0xb2a72665
+$30 <- 0xb1ef6263
+$31 <- 0x0573870a
+Stopped at time : 515 ns :  in File "E:/CECS 341 Labs/Lab 4/RegisterFile/RegFile32Test.v" Line 105 
